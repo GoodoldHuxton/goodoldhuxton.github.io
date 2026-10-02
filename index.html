@@ -3,24 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GoodoldHuxton</title>
+<title>GoodoldHuxton · Yiğit, freelance developer</title>
+<meta name="description" content="Yiğit (GoodoldHuxton): freelance developer building Discord bots, automation tools, desktop apps and Android apps.">
+<meta property="og:title" content="GoodoldHuxton · Freelance developer">
+<meta property="og:description" content="Discord bots, automation tools, small apps and technical solutions.">
+<meta property="og:image" content="https://goodoldhuxton.github.io/assets/price-tracker.png">
 <style>
-  :root { --bg:#F3F7F8; --text:#0B1113; --muted:#34464D; --accent:#00897B; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0B1216; --text:#F1F6F8; --muted:#B8CAD1; --accent:#00D1B2; } }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, sans-serif; }
-  main { max-width:640px; margin:0 auto; padding:48px 16px; }
+  :root {
+    --bg:#F3F7F8; --surface:#FFFFFF; --border:#DCE5E8;
+    --text:#0B1113; --muted:#4A5D64; --accent:#00897B; --accent-text:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0B1216; --surface:#121C21; --border:#22323A;
+      --text:#F1F6F8; --muted:#A9BCC3; --accent:#00D1B2; --accent-text:#04201C; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
   a { color:var(--accent); }
-  p { color:var(--muted); }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  header { padding:72px 0 48px; }
+  .tag { display:inline-block; font-size:13px; font-weight:600; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:2px 12px; }
+  h1 { font-size:clamp(32px, 6vw, 48px); line-height:1.15; margin:16px 0 12px; }
+  h2 { font-size:26px; margin:0 0 20px; }
+  h3 { margin:0 0 6px; font-size:19px; }
+  .lead { font-size:18px; color:var(--muted); max-width:620px; margin:0 0 28px; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { display:inline-block; padding:11px 20px; border-radius:10px; font-weight:600; text-decoration:none; border:1px solid var(--border); color:var(--text); background:var(--surface); }
+  .btn.primary { background:var(--accent); color:var(--accent-text); border-color:var(--accent); }
+  section { padding:40px 0; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px; }
+  .card p { color:var(--muted); margin:0; }
+  .project { display:grid; gap:24px; grid-template-columns:1fr; align-items:center; background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:20px; margin-bottom:20px; }
+  @media (min-width:760px) { .project { grid-template-columns:1.1fr 1fr; padding:28px; } }
+  .project img { width:100%; height:auto; border-radius:10px; border:1px solid var(--border); display:block; }
+  .project p { color:var(--muted); margin:0 0 12px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
+  .chips li { font-size:13px; padding:2px 10px; border-radius:999px; background:var(--bg); border:1px solid var(--border); color:var(--muted); }
+  .term { background:#0E1620; color:#D6E2E8; border-radius:10px; padding:18px; font:14px/1.7 ui-monospace, Consolas, monospace; overflow-x:auto; }
+  .term .c { color:#7F8EA3; } .term .k { color:#8EA2FF; } .term .ok { color:#3DDC97; }
+  .skills { color:var(--muted); }
+  footer { padding:48px 0 64px; border-top:1px solid var(--border); margin-top:24px; }
+  footer p { color:var(--muted); }
 </style>
 </head>
 <body>
-<main>
-  <h1>GoodoldHuxton</h1>
-  <p>Independent developer of Putzkraft, a storage cleaner and security checkup app for Android.</p>
-  <ul>
-    <li><a href="https://goodoldhuxton.github.io/putzkraft-privacy/">Putzkraft privacy policy</a></li>
-    <li><a href="mailto:skyiest15@gmail.com">skyiest15@gmail.com</a></li>
-  </ul>
-</main>
+<div class="wrap">
+
+<header>
+  <span class="tag">Available for freelance work</span>
+  <h1>Hi, I'm Yiğit.<br>I build practical software that saves you time.</h1>
+  <p class="lead">Discord bots, automation tools, desktop apps and Android apps. Small, focused projects that solve one real problem well, delivered quickly.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:skyiest15@gmail.com?subject=Project%20inquiry">Start a project</a>
+    <a class="btn" href="https://www.linkedin.com/in/yi%C4%9Fit-alp-bayar-96630b268">LinkedIn</a>
+    <a class="btn" href="https://github.com/GoodoldHuxton">GitHub</a>
+  </div>
+</header>
+
+<section>
+  <h2>What I can build for you</h2>
+  <div class="grid">
+    <div class="card"><h3>🤖 Discord bots</h3><p>Moderation, role menus, welcome messages, tickets, logs and custom commands for your community.</p></div>
+    <div class="card"><h3>⚙️ Automation tools</h3><p>Price monitoring, data collection, Excel reports and email alerts. Stop doing repetitive work by hand.</p></div>
+    <div class="card"><h3>📱 Apps &amp; websites</h3><p>Android apps, desktop tools and simple, fast websites or landing pages.</p></div>
+    <div class="card"><h3>🖥️ Game servers</h3><p>Setup, configuration and management of game servers and the tooling around them.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Selected projects</h2>
+
+  <article class="project">
+    <img src="assets/price-tracker.png" alt="Price Tracker Pro dashboard showing tracked products, controls and email settings" width="1164" height="851" loading="lazy">
+    <div>
+      <h3>Price Tracker Pro</h3>
+      <p>A desktop price monitoring application with automated email alerts, Excel export and multilingual support. Designed to reduce manual price checking and automate recurring monitoring workflows.</p>
+      <ul class="chips"><li>Python</li><li>Tkinter</li><li>BeautifulSoup</li><li>Pandas</li><li>Excel</li></ul>
+      <a href="https://github.com/GoodoldHuxton/price-tracker-pro">View on GitHub →</a>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="term" aria-label="Example slash commands of the Discord Moderation Bot">
+      <span class="c"># Slash commands</span><br>
+      <span class="k">/rolemenu</span> Gamer, Music, Art<br>
+      <span class="ok">✓ Role menu posted with 3 buttons</span><br><br>
+      <span class="k">/timeout</span> @spammer 10 spam<br>
+      <span class="ok">✓ Timed out for 10 min · logged to #mod-log</span><br><br>
+      <span class="k">/clear</span> 20<br>
+      <span class="ok">✓ Deleted 20 messages</span>
+    </div>
+    <div>
+      <h3>Discord Moderation Bot</h3>
+      <p>A customizable moderation and community management bot with slash commands, role menus, welcome messages and moderation logs. Built for communities that want to automate repetitive moderation and management tasks.</p>
+      <ul class="chips"><li>Python</li><li>discord.py</li><li>Slash commands</li></ul>
+      <a href="https://github.com/GoodoldHuxton/Discord-Moderation-Bot">View on GitHub →</a>
+    </div>
+  </article>
+
+  <article class="project">
+    <img src="assets/putzkraft.png" alt="Putzkraft: cleaning power for your phone" width="1024" height="500" loading="lazy">
+    <div>
+      <h3>Putzkraft for Android</h3>
+      <p>A storage cleaner and security checkup app for Android. Finds junk and large files and gives your phone a security score. Available in English, Turkish and German. Currently in testing on Google Play.</p>
+      <ul class="chips"><li>Kotlin</li><li>Jetpack Compose</li><li>Android</li></ul>
+      <a href="https://goodoldhuxton.github.io/putzkraft-privacy/">Privacy policy</a>
+    </div>
+  </article>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <p class="skills">Python • HTML • CSS • JavaScript • Kotlin • Git • GitHub • Discord.py • Automation • Android • Server Management</p>
+</section>
+
+<footer>
+  <h2>Need a bot, automation tool, small app or technical solution?</h2>
+  <p>Tell me what you need, and I'll reply with how I'd solve it and what it would cost.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:skyiest15@gmail.com?subject=Project%20inquiry">skyiest15@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/yi%C4%9Fit-alp-bayar-96630b268">LinkedIn</a>
+  </div>
+  <p style="margin-top:32px;font-size:14px">© 2026 GoodoldHuxton</p>
+</footer>
+
+</div>
 </body>
 </html>

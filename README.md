@@ -8,7 +8,7 @@ It is the public home for my projects and apps, including the publisher pages fo
 
 ## Features
 
-- Lightweight single-page site with no frameworks, no build step and no tracking
+- Portfolio site: services, selected projects and contact. Single page with no frameworks, no build step and no tracking
 - Automatic light / dark theme that follows the visitor's system setting
 - Mobile-friendly layout
 - Hosts `app-ads.txt` for verifying the Android app with ad networks
