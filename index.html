@@ -7,21 +7,35 @@
 <meta name="description" content="Yiğit (GoodoldHuxton): freelance developer building Discord bots, automation tools, desktop apps and Android apps.">
 <meta property="og:title" content="GoodoldHuxton · Freelance developer">
 <meta property="og:description" content="Discord bots, automation tools, small apps and technical solutions.">
-<meta property="og:image" content="https://goodoldhuxton.github.io/assets/price-tracker.png">
+<meta property="og:image" content="https://goodoldhuxton.github.io/assets/logo.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:#F3F7F8; --surface:#FFFFFF; --border:#DCE5E8;
-    --text:#0B1113; --muted:#4A5D64; --accent:#00897B; --accent-text:#FFFFFF;
+    --bg:#F7F5F0; --surface:#FFFFFF; --border:#E4DFD3;
+    --text:#14110B; --muted:#5C5547; --accent:#A35F00; --accent-text:#FFFFFF;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#0B1216; --surface:#121C21; --border:#22323A;
-      --text:#F1F6F8; --muted:#A9BCC3; --accent:#00D1B2; --accent-text:#04201C; }
+    :root { --bg:#0E0F12; --surface:#17181D; --border:#2A2B31;
+      --text:#F3F1EC; --muted:#B4AE9F; --accent:#F5B841; --accent-text:#1A1300; }
   }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
   a { color:var(--accent); }
   .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
-  header { padding:72px 0 48px; }
+  .topbar { display:flex; align-items:center; gap:12px; padding:24px 0 0; text-decoration:none; color:var(--text); width:fit-content; }
+  .topbar img { width:auto; height:36px; image-rendering:pixelated; }
+  .wordmark { font-family:"Press Start 2P", ui-monospace, monospace; font-size:14px; letter-spacing:.5px; }
+  header { padding:56px 0 48px; }
+  .about { display:grid; gap:24px; align-items:start; }
+  @media (min-width:760px) { .about { grid-template-columns:140px 1fr; } }
+  .about img { width:120px; height:auto; image-rendering:pixelated; }
+  .about p { color:var(--muted); margin:0 0 12px; max-width:660px; }
+  .about .old { font-family:"Press Start 2P", ui-monospace, monospace; font-size:12px; color:var(--accent); }
   .tag { display:inline-block; font-size:13px; font-weight:600; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:2px 12px; }
   h1 { font-size:clamp(32px, 6vw, 48px); line-height:1.15; margin:16px 0 12px; }
   h2 { font-size:26px; margin:0 0 20px; }
@@ -49,6 +63,11 @@
 </head>
 <body>
 <div class="wrap">
+
+<a class="topbar" href="./" aria-label="GoodoldHuxton home">
+  <img src="assets/logo-mark.png" alt="" width="128" height="96">
+  <span class="wordmark">GoodoldHuxton</span>
+</a>
 
 <header>
   <span class="tag">Available for freelance work</span>
@@ -126,6 +145,19 @@
 <section>
   <h2>Skills</h2>
   <p class="skills">Python • HTML • CSS • JavaScript • Kotlin • Git • GitHub • Discord.py • Automation • Android • Server Management</p>
+</section>
+
+<section>
+  <h2>Why "Good old Huxton"?</h2>
+  <div class="about">
+    <img src="assets/logo.png" alt="GH pixel logo" width="512" height="512" loading="lazy">
+    <div>
+      <p>In September 2015 I played Team Fortress 2 for the first time. I was pretty good at it back then, so I went by <strong>Good Huxton</strong>. It was the one game I switched my computer on for after work, and I played a lot of it.</p>
+      <p>The name itself came from university. I was studying databases and building small Flutter apps for assignments, and one of them was an Instagram-style app that needed a name. Cartoon Network was on my mind, the "toon" stuck, and it became Huxton. That app was only ever a class project and never got published.</p>
+      <p>Years went by and my aim got worse, so Good Huxton turned into <strong>Good old Huxton</strong>. The name stayed. Today it's the name I put on everything I build.</p>
+      <p class="old">est. 2015</p>
+    </div>
+  </div>
 </section>
 
 <footer>
